@@ -30,9 +30,9 @@ export default function Navbar() {
                     </div>
                 </nav> */}
                 <nav className="flex flex-row w-3/5 items-center">
-                    <NavbarButton text="Profile" />
-                    <NavbarButton text="Dashboard" />
-                    <NavbarButton text="Insights" />
+                    <NavbarButton link="profile" text="Profile" />
+                    <NavbarButton link="selectdashboard" text="Dashboard" />
+                    <NavbarButton link="insights" text="Insights" />
                 </nav>
                 <div
                     className="border-solid h-px shrink-0 border-t border-b-0 border-black border-x-0"

@@ -15,9 +15,9 @@ export default function Page() {
     const router = useRouter()
 
     return (
-        <section>
+        <section className="bg-[#faf0e6] h-screen">
             <section>
-                <h2>Pinned Dashboards</h2>
+                <h2 className="text-black">Pinned Dashboards</h2>
                 {appContext?.dashboards.filter(
                     dashboardInformation => dashboardInformation.isPinned
                 ).map((dashboardInformation: DashboardInformation, index: number) => (
@@ -29,7 +29,7 @@ export default function Page() {
                 ))}
             </section>
             <section>
-                <h2>Dashboards by User Activities</h2>
+                <h2 className="text-black">Dashboards by User Activities</h2>
                 {appContext?.dashboards.filter(
                     dashboardInformation => !dashboardInformation.isPinned
                 ).map((dashboardInformation: DashboardInformation, index: number) => (

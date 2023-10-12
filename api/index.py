@@ -16,7 +16,6 @@ def signIn():
 
 @app.route("/api/getinsights", methods=["POST"])
 def getInsights():
-    print(request.json)
     property_address = request.json["location"]
     account = request.json["client"]
     return list(

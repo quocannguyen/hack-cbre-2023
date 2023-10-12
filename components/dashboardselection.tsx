@@ -24,11 +24,20 @@ export default function DashboardSelection({
     }
 
     return (
-        <section>
-            {dashboard}: {userActivity}
-            <button onClick={togglePin}>
-                {isPinned ? "Unpin" : "Pin"}
-            </button>
-        </section>
+        <div id="NewRootRoot" className="flex flex-col">
+            <div className="border-solid bg-[#29bb80] flex flex-row justify-end gap-10 h-16 shrink-0 items-start px-1 py-2 border-black border-2">
+                <div className="font-['Kanit'] uppercase text-white mt-1">
+                    {dashboard}: {userActivity}
+                </div>
+                <div className="self-end">
+                    <button
+                        onClick={togglePin}
+                        className="text-xs font-['Kanit'] bg-white w-12 shrink-0 items-center px-3 rounded-[100px] text-black"
+                    >
+                        {isPinned ? "Unpin" : "Pin"}
+                    </button>
+                </div>
+            </div>
+        </div>
     )
 }

@@ -50,7 +50,7 @@ export default function Home() {
             })
             appContext?.setDashboards(dashboards)
 
-            router.push("/insights")
+            router.push("/selectdashboard")
         }
     }
 
