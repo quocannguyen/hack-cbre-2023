@@ -1,0 +1,51 @@
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.body {
+  margin: 0px 0px 0px 0px;
+}
+
+.first {
+  height: 25vh;
+  background: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  color: green;
+  border: none;
+}
+
+.second {
+  height: 92vh;
+  background: white;
+}
+
+.bar {
+  margin-top: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  gap: 66px;
+  list-style: none;
+  color: grey;
+  padding-top: 26px;
+  margin-top: 26px;
+}
+.xyz {
+  width: 99px;
+  height: 25px;
+  margin-left: 46%;
+  margin-right: 10%;
+}
+.line {
+  border: solid 2px;
+  border-top-color: black;
+  color: white;
+  margin: 5px 40px 0 40px;
+}

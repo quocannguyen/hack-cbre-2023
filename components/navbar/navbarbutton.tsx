@@ -1,11 +1,8 @@
-export default function NavbarButton({
-    text
-}: {
-    text: string
-}) {
-    return (
-        <div className="text-sm font-['Kanit'] text-black">
-            {text}
-        </div>
-    )
+import "./style.css";
+export default function NavbarButton({ text }: { text: string }) {
+  return (
+    <div>
+      <div>{text}</div>
+    </div>
+  );
 }
