@@ -8,6 +8,7 @@ import InputForm from "@/components/input/inputform";
 import { signIn } from "@/actions/authenticateActions";
 import { DashboardInformation, UserProfileProps } from "@/models/userprofile.model";
 import { AppContext } from "@/app/context/appcontext";
+import cbrelogo from "@/assets/cbre-logo.png"
 
 export default function Page() {
     const appContext = useContext(AppContext)
@@ -53,20 +54,30 @@ export default function Page() {
     }
 
     return (
-        <section>
-            <InputForm
-                onSubmit={onSubmit}
-                onChange={handleChange}
-                inputs={[
-                    {
-                        id: "email",
-                        value: credentialsState.email
-                    },
-                    {
-                        id: "password",
-                        value: credentialsState.password
-                    }
-                ]} />
+        <section className="bg-[#faf0e6] h-screen">
+            <section className="px-10">
+                <div className="h-10"></div>
+                <img
+                    src={cbrelogo.src}
+                    className="h-24 mx-auto"
+                />
+            </section>
+            <section className="my-auto">
+                <InputForm
+                    onSubmit={onSubmit}
+                    onChange={handleChange}
+                    inputs={[
+                        {
+                            id: "email",
+                            value: credentialsState.email
+                        },
+                        {
+                            id: "password",
+                            value: credentialsState.password
+                        }
+                    ]}
+                    buttonString="Login" />
+            </section>
         </section>
     )
 }
