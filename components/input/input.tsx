@@ -26,7 +26,7 @@ export default function Input({
                 className={
                     // `w-full p-4 pt-6 font-light bg-white border-2 outline-none text-black ${big ? "w-[400px] pb-[6rem]" : ""}`
                     // "text-base font-['Kanit'] leading-[16px] mx-4 w-full border-solid border-[rgba(28,_115,_80,_0.85)] bg-white"
-                    "text-base font-['Kanit'] \
+                    "text-base text-black font-['Kanit'] \
                     border-solid border-[rgba(28,_115,_80,_0.85)] bg-white border-4 rounded-lg \
                     self-stretch h-12 shrink-0 px-4"
                 } 

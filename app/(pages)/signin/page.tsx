@@ -1,6 +1,5 @@
 'use client'
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useContext, useState } from "react";
 // import { initialCredentials } from "@/models/credentials.model";
@@ -50,6 +49,8 @@ export default function Page() {
                 }
             })
             appContext?.setDashboards(dashboards)
+
+            router.push("/postsignin/insights")
         }
     }
 

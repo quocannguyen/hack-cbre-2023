@@ -1,4 +1,4 @@
-import Navbar from '@/components/navbar'
+import Navbar from '@/components/navbar/navbar'
 import { AppContextProvider } from './context/appcontext'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <AppContextProvider>
-          <Navbar/>
+          {/* <Navbar/> */}
           {children}
         </AppContextProvider>
       </body>

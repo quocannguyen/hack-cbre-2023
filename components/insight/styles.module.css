@@ -1,0 +1,39 @@
+.buttonsContainer {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button {
+    text-align: center;
+    font-family: Kanit;
+    font-size: 0.75rem;
+    line-height: 1rem; 
+    color: #ffffff; 
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description {
+    width: 80%; 
+    font-size: 0.75rem;
+    line-height: 1rem; 
+    text-align: center; 
+    color: #ffffff;
+    margin: auto;
+}
+
+.container {
+    border-width: 2px; 
+    border-color: #000000; 
+    border-style: solid; 
+    width: 338px;
+    height: 144px;
+    background: #1c7350;
+    border-radius: 31px;
+    padding: 0.75rem; 
+}
